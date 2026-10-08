@@ -1,0 +1,21 @@
+[workspace]
+name = "polars-infinite-table"
+channels = ["conda-forge"]
+platforms = ["osx-arm64", "osx-64", "linux-64"]
+
+[dependencies]
+python = ">=3.10"
+polars = ">=1.0,<3"
+anywidget = ">=0.9"
+traitlets = "*"
+ipython = "*"
+pytest = "*"
+jupyterlab = "*"
+pip = "*"
+
+[pypi-dependencies]
+polars-infinite-table = { path = ".", editable = true }
+
+[tasks]
+test = "pytest -q"
+lab = "jupyter lab"
