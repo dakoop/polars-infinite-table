@@ -1,0 +1,55 @@
+.polars-infinite-table .dataframe {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+.polars-infinite-table .dataframe th,
+.polars-infinite-table .dataframe td {
+  padding: 4px 10px;
+  border: none;
+  text-align: right;
+}
+.polars-infinite-table .dataframe thead th,
+.polars-infinite-table .dataframe thead td {
+  font-weight: bold;
+}
+.polars-infinite-table .dataframe thead tr:last-child th,
+.polars-infinite-table .dataframe thead tr:last-child td {
+  box-shadow: inset 0 -1px 0 var(--jp-border-color1, #999);
+}
+.polars-infinite-table .dataframe tbody tr:nth-child(even) {
+  background-color: rgba(128, 128, 128, 0.12);
+}
+.polars-infinite-table .dataframe > thead > tr,
+.polars-infinite-table .dataframe > tbody > tr {
+  text-align: right;
+  white-space: pre-wrap;
+}
+.polars-infinite-table .dataframe thead tr:nth-child(1) th,
+.polars-infinite-table .dataframe thead tr:nth-child(1) td {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: var(--jp-layout-color2, #f5f5f5);
+}
+.polars-infinite-table .dataframe thead tr:nth-child(2) th,
+.polars-infinite-table .dataframe thead tr:nth-child(2) td {
+  position: sticky;
+  top: var(--header-row-1-height, 22px);
+  z-index: 9;
+  background-color: var(--jp-layout-color2, #f5f5f5);
+}
+.polars-row-status {
+  margin-top: 6px;
+  color: var(--jp-ui-font-color2, #666);
+  font-size: 12px;
+}
+.polars-reverse-link {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  color: var(--jp-link-color, #0b57d0);
+  text-decoration: underline;
+  cursor: pointer;
+  font: inherit;
+}
