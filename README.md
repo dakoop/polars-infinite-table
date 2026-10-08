@@ -11,7 +11,7 @@ Developed with assistance from GitHub Copilot.
 ## Install
 
 ```sh
-pip install git+https://github.com/<user>/polars-infinite-table
+pip install git+https://github.com/dakoop/polars-infinite-table
 ```
 
 ## Usage
