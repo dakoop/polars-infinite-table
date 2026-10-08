@@ -19,11 +19,12 @@ pip install git+https://github.com/dakoop/polars-infinite-table
 ```python
 import polars_infinite_table as pit
 
-pit.enable(persist_rows=20, max_height="500px", chunk_size=50)  # default display for pl.DataFrame
-pit.disable()                                                   # restore previous formatters
+pit.enable()                 # default display for pl.DataFrame
+pit.disable()                # restore previous formatters
 
 pit.PolarsInfiniteTable(df)  # use a single table explicitly
 ```
+If you wish to configure the widget, the
 
 Or `%load_ext polars_infinite_table`. To enable in every session, add the `enable()` call to a file in `~/.ipython/profile_default/startup/`.
 
@@ -31,11 +32,17 @@ Or `%load_ext polars_infinite_table`. To enable in every session, add the `enabl
 
 | Option | Default | Meaning |
 | --- | --- | --- |
-| `persist_rows` | 20 | Rows rendered up front and kept in the static HTML |
+| `persist_rows` | `20` | Rows rendered up front and kept in the static HTML |
 | `max_height` | `500px` | Height of the scroll area |
-| `chunk_size` | 50 | Rows fetched per scroll request |
+| `chunk_size` | `50` | Rows fetched per scroll request |
 
 Environment variables `POLARS_FMT_MAX_COLS`, `POLARS_FMT_MAX_ROWS` and `POLARS_FMT_STR_LEN` (max characters per cell, default 50) are honored.
+
+You can configure the widget when enabling. For example,
+
+```python
+pit.enable(persist_rows=20, max_height="500px", chunk_size=50)
+```
 
 ## Notes
 
