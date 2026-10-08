@@ -24,7 +24,6 @@ pit.disable()                # restore previous formatters
 
 pit.PolarsInfiniteTable(df)  # use a single table explicitly
 ```
-If you wish to configure the widget, the
 
 Or `%load_ext polars_infinite_table`. To enable in every session, add the `enable()` call to a file in `~/.ipython/profile_default/startup/`.
 
